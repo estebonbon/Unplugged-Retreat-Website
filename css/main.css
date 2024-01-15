@@ -87,6 +87,60 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Global Styles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+html {
+  font-size: 1rem;
+}
+
+body {
+  font-family: 'Open sans', sans-serif;
+  font-size: 1em;
+  text-align: left;
+}
+
+ul,
+ol {
+list-style-type: none;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+}
+
+h3,
+h4{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  margin: 20px 0;
+
+}
+
+p {
+  font-size: 0.875em;
+  line-height: 18px;
+}
+
+img {
+
+}
+
+figure {
+
+}
+
+address {
+  font-style: normal;
+
+}
+
+
 /* ---------------------------- Base Header - Footer Styles ------------------------------- */
 .content-wrapper {
   outline: 3px dashed sienna;
@@ -138,7 +192,7 @@ footer p {
 }
 
 footer .content-wrapper{
-  width: 60%;
+  width: 55%;
 }
 
 footer .contact {
@@ -271,154 +325,8 @@ aside {
   margin-bottom: 50px;
 }
    
-/* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm Media Queries mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
 
-/* ======================================================= Tablet Styles ================================================================= */
 
-@media only screen and (min-width: 768px){
-  /* =========== General Styles ========= */
-.content-wrapper {
-  max-width: 640px;
-  margin: 100px 0;
-}
- /* ============ Header Styles =============  */
-
- header {
-  padding: 33px 0;
-
- }
- header .content-wrapper {
-  width: 100%;
-  justify-content: space-between;
-
- }
-
- .header-divider {
-  display: none;
- }
-
- header nav {
-  width: 23%;
-  outline: 4px dashed red;
-
- }
-
- header nav ul {
-  outline: 3px dashed blue;
-  justify-content: space-between;
-
- }
-
- /* ================ Hero Area =============  */
-
- /* ================== Aside ================  */
-
- aside .content-wrapper {
-  margin: 50px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
- }
-
- aside .content-wrapper .form-description,
- aside .content-wrapper .form {
-  width: 40%;
-  margin: 0;
- }
-
- /* =================== Features ================  */
-
- .features article {
-  display: flex;
-  align-items: center;
-  flex-flow: column wrap;
-  flex-basis: 50%;
-
- }
-
- .features .features-item-description {
-  width: 50%;
-  
-
- }
-
- /* ============= Reviews ==============  */
- .reviews article {
-  display: flex;
-  justify-content: space-between;
- }
-
- .reviews article div {
-  width: 49%;
-
- }
-
- /* ============ Footer ============= */
- footer .content-wrapper {
-  width: 65%;
-
- }
-
- .footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
- }
-
- footer .contact {
-  margin-bottom: 0;
-
- }
-
- footer .copyright {
-  width: 100%;
- }
-
- /* ########################################## About Page ###################################################  */
- .mission-content {
-  /* outline: 2px dotted pink; */
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding-top: 20px;
-
- }
-
- .mission-content p{
-  width: 45%;
- }
-
- .contact-section .contact-wrapper h2 {
-  width: 80%;
- }
-
- .contact-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
- }
-
- /* ################################################## FAQ PAGE ####################################################### */
-
- .faq .content-wrapper {
-  justify-content: space-between;
- }
-
- .faq-content {
-  flex-basis: 45%;
- }
-
- .faq h2 {
-  width: 100%;
- }
-}
-
-/* ======================================================= Desktop Styles ================================================================= */
-
-@media only screen and (min-width: 1200px){
-
-}
 
 /* ==========================================================================
    Helper classes
@@ -507,6 +415,212 @@ aside {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm Media Queries mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+
+/* ======================================================= Tablet Styles ================================================================= */
+
+@media only screen and (min-width: 768px){
+  /* =========== General Styles ========= */
+.content-wrapper {
+  max-width: 640px;
+  margin: 100px 0;
+}
+ /* ============ Header Styles =============  */
+
+ header {
+  padding: 33px 0;
+
+ }
+ header .content-wrapper {
+  width: 100%;
+  justify-content: space-between;
+
+ }
+
+ .header-divider {
+  display: none;
+ }
+
+ header nav {
+  width: 23%; /* change to 20 if needed */
+  outline: 4px dashed red;
+
+ }
+
+ header nav ul {
+  outline: 3px dashed blue;
+  justify-content: space-between;
+
+ }
+
+ /* ================ Hero Area =============  */
+
+ /* ================== Aside ================  */
+
+ aside .content-wrapper {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+ }
+
+ aside .content-wrapper .form-description,
+ aside .content-wrapper .form {
+  width: 40%;
+  margin: 0;
+ }
+
+ /* =================== Features ================  */
+
+ .features article {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  flex-basis: 50%;
+
+ }
+
+ .features .features-item-description {
+  width: 62%;
+  
+
+ }
+
+ /* ============= Reviews ==============  */
+ .reviews article {
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .reviews article div {
+  width: 49%;
+
+ }
+
+ /* ============ Footer ============= */
+ footer .content-wrapper {
+  width: 65%;
+
+ }
+
+ .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+ }
+
+ footer .contact {
+  margin-bottom: 0;
+
+ }
+
+ footer .copyright {
+  width: 100%;
+ }
+
+ /* ########################################## About Page ###################################################  */
+ .mission-content {
+  /* outline: 2px dotted pink; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 20px;
+
+ }
+
+ .mission-content p{
+  width: 45%;
+ }
+
+ .contact-section .contact-wrapper h2 {
+  width: 80%;
+ }
+
+ .contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+ }
+
+ /* ################################################## FAQ PAGE ####################################################### */
+
+ .faq .content-wrapper {
+  justify-content: space-between;
+ }
+
+ .faq-content {
+  flex-basis: 45%;
+ }
+
+ .faq h2 {
+  width: 100%;
+ }
+}
+
+/* ======================================================= Desktop Styles ================================================================= */
+
+@media only screen and (min-width: 1200px){
+
+
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  header {
+    padding: 15px 0;
+
+  }
+  /* Hero Area  */
+
+  .hero-area h1 {
+    width: 80%;
+  }
+
+  /* Aside  */
+
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+
+  }
+
+  /* Features */
+
+  .features h2 {
+    width: 90%;
+  }
+  .features article {
+    flex-basis: 33%;
+
+  }
+   
+  /* Reviews  */
+  .reviews article div {
+    width: 42%;
+
+  }
+
+  /* ################################################# About Page ################################################# */
+
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+
+  }
+
+  /* ################################################# FAQ PAGE ################################################### */
+  .faq h2 {
+    width: 100%;
+  }
+}
+
+
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */

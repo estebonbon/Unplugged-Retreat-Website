@@ -95,12 +95,15 @@ html {
 body {
   font-family: 'Open sans', sans-serif;
   font-size: 1em;
+  color: #e2e3ed;
   text-align: left;
 }
 
 ul,
 ol {
 list-style-type: none;
+margin: 0;
+padding: 0;
 }
 
 a {
@@ -112,6 +115,7 @@ a {
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: 500;
 }
 
 h3,
@@ -119,6 +123,7 @@ h4{
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
   margin: 20px 0;
+  font-weight: 500;
 
 }
 
@@ -128,30 +133,33 @@ p {
 }
 
 img {
+  width: 100%;
 
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
   font-style: normal;
+}
 
+.content-wrapper {
+  /* outline: 3px dashed sienna; */
+  width: 90%;
+  margin: 50px 0;
 }
 
 
 /* ---------------------------- Base Header - Footer Styles ------------------------------- */
-.content-wrapper {
-  outline: 3px dashed sienna;
-  width: 90%;
-  margin: 50px 0;
-}
+
 
 header {
   display: flex;
   justify-content: center;
   padding: 15px 0;
+  background-color: #202322; 
 }
 
 header .content-wrapper {
@@ -162,29 +170,41 @@ header .content-wrapper {
   margin: 0;
 }
 
+header figure {
+  width: 60%;
+}
+
 .header-divider {
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
-
+  background: #3a3a3a;
 }
 
 header nav {
   width: 60%;
+  font-weight: 700;
+  font-size: 1.125em;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
-
 }
+
+header nav ul li {
+  font-size: 1.125em;
+  /* font-weight: bold; */
+} 
 
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: #202322; 
+  color: #e2e3ed;
 }
 
 footer p {
@@ -223,9 +243,21 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
+  background: url(../design-docs/unplugged-retreat.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: #333;
+  min-height: 500px;
   display: flex;
   justify-content: center;
+}
 
+.hero-area h1 {
+  color: #e2e3ed;
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 /* Aside */
@@ -233,19 +265,54 @@ footer .copyright {
 aside {
   display: flex;
   justify-content: center;
+  background-color: #527158;
+}
+
+aside h3,
+aside p {
+  color: #e2e3ed;
+}
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
 
 }
+
 
 /* Features */
 
 .features {
+  background: url(../design-docs/unplugged-retreat-features.jpg);
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
-
 }
 
 .features h2 {
   margin-bottom: 60px;
+  color: #e2e3ed;
 }
 
 .features article {
@@ -258,11 +325,12 @@ aside {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
-
 }
 
 .features p {
   margin: 0;
+  color: #e2e3ed;
+  text-align: center;
 }
 
 /* Reviews */
@@ -270,16 +338,23 @@ aside {
 .reviews {
   display: flex;
   justify-content: center;
+  background-color: #2a423a;
 }
 
 .reviews h2 {
   margin-bottom: 40px;
+  color: #e2e3ed;
+  line-height: 1;
 }
 
 .reviews h3 {
   width: 55%;
   margin: 20px 0;
+  color: #e2e3ed;
+}
 
+.reviews p{
+  color: #e2e3ed;
 }
 
 /* ################################################### About Page ############################################################ */
@@ -426,6 +501,16 @@ aside {
   max-width: 640px;
   margin: 100px 0;
 }
+
+h2 {
+  font-size: 2.25em;
+  line-height: 1.333;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.25;
+}
  /* ============ Header Styles =============  */
 
  header {
@@ -438,23 +523,37 @@ aside {
 
  }
 
+ header figure {
+  width: 30%;
+ }
+
  .header-divider {
   display: none;
  }
 
  header nav {
   width: 23%; /* change to 20 if needed */
-  outline: 4px dashed red;
+  /* outline: 4px dashed red; */
 
  }
 
  header nav ul {
-  outline: 3px dashed blue;
+  /* outline: 3px dashed blue; */
   justify-content: space-between;
 
  }
 
  /* ================ Hero Area =============  */
+
+ .hero-area {
+  min-height: 600px;
+ }
+
+ .hero-area h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin: 0;
+ }
 
  /* ================== Aside ================  */
 
@@ -473,12 +572,15 @@ aside {
 
  /* =================== Features ================  */
 
+.features h2 {
+  margin-bottom: 20px;
+}
+
  .features article {
   display: flex;
   align-items: center;
   flex-flow: column wrap;
   flex-basis: 50%;
-
  }
 
  .features .features-item-description {
@@ -493,9 +595,14 @@ aside {
   justify-content: space-between;
  }
 
+ .reviews article figure,
  .reviews article div {
   width: 49%;
+ }
 
+ .reviews h3 {
+  margin: 0;
+  width: 75%;
  }
 
  /* ============ Footer ============= */
@@ -513,7 +620,14 @@ aside {
 
  footer .contact {
   margin-bottom: 0;
+ }
 
+ footer h4 {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+ }
+ footer p{
+  line-height: 1.285;
  }
 
  footer .copyright {
@@ -572,10 +686,21 @@ aside {
     padding: 15px 0;
 
   }
+
+  h3,
+  h4 {
+    font-size: 1.875em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 1.33;
+  }
   /* Hero Area  */
 
   .hero-area h1 {
     width: 80%;
+    font-size: 3.75em;
   }
 
   /* Aside  */
@@ -595,6 +720,7 @@ aside {
   .features h2 {
     width: 90%;
   }
+
   .features article {
     flex-basis: 33%;
 
@@ -603,7 +729,14 @@ aside {
   /* Reviews  */
   .reviews article div {
     width: 42%;
+  }
 
+  .reviews h2 {
+    padding-bottom: 50px;
+  }
+
+  footer h4 {
+    font-size: 1.875em;
   }
 
   /* ################################################# About Page ################################################# */
